@@ -392,5 +392,3 @@ Done
 
 ====
 
-..... stopped to log pushes and pulls here ......
-

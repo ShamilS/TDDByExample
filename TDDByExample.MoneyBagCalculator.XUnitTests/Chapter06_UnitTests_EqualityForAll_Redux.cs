@@ -60,9 +60,6 @@ namespace TDDByExample.MoneyBagCalculator.XUnitTests
             Assert.Equal(new Franc(15), new Franc(5).Times(3));
         }
 
-        /// <summary>
-        /// Common equals
-        /// </summary>
         [Fact]
         public void TestFact06_TestEquality()
         {
