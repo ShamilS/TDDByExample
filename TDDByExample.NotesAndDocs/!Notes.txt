@@ -324,3 +324,36 @@ Fast-forward
  create mode 100644 TDDByExample.NotesAndDocs/TODOs and Done Chapter by Chapter.txt
  delete mode 100644 TDDByExample.NotesAndDocs/TODOs.txt
 Done
+
+Chapter 03 => push/merge/pull
+
+"C:\Program Files\Git\bin\git.exe" push -u --recurse-submodules=check --progress "origin" refs/heads/chapter03:refs/heads/chapter03
+Enumerating objects: 15, done.
+Delta compression using up to 8 threads
+Total 9 (delta 6), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'chapter03' on GitHub by visiting:        
+remote:      https://github.com/ShamilS/TDDByExample/pull/new/chapter03        
+remote: 
+Branch 'chapter03' set up to track remote branch 'chapter03' from 'origin'.
+To https://github.com/ShamilS/TDDByExample.git
+ * [new branch]      chapter03 -> chapter03
+Done
+
+...
+
+"C:\Program Files\Git\bin\git.exe" pull --progress "origin" 
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0        
+From https://github.com/ShamilS/TDDByExample
+   1dcbd54..ef10a7b  master     -> origin/master
+Updating 1dcbd54..ef10a7b
+Fast-forward
+ .../Chapter03_UnitTests_EqualityForAll.cs          | 43 +++++++++++++++++
+ TDDByExample.MoneyBagCalculator/Dollar$03.cs       | 28 +++++++++++
+ TDDByExample.NotesAndDocs/!Notes.txt               | 54 ++++++++++++++++++----
+ .../TODOs and Done Chapter by Chapter.txt          |  7 +++
+ 4 files changed, 124 insertions(+), 8 deletions(-)
+ create mode 100644 TDDByExample.MoneyBagCalculator.XUnitTests/Chapter03_UnitTests_EqualityForAll.cs
+ create mode 100644 TDDByExample.MoneyBagCalculator/Dollar$03.cs
+Done
+
