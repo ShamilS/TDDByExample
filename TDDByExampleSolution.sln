@@ -9,10 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDDByExample.MoneyBagCalcul
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDDByExample.MoneyBagCalculator.XUnitTests", "TDDByExample.MoneyBagCalculator.XUnitTests\TDDByExample.MoneyBagCalculator.XUnitTests.csproj", "{A54764A5-228F-457E-8985-0FE1CD32C8B5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{C17E0CDF-6526-4A7F-800B-F1AB322113F3}"
-	ProjectSection(SolutionItems) = preProject
-		!Notes.txt = !Notes.txt
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDByExample.NotesAndDocs", "TDDByExample.NotesAndDocs\TDDByExample.NotesAndDocs.csproj", "{E958B16E-62A5-4630-B0FA-58D9ACAB0E7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +29,10 @@ Global
 		{A54764A5-228F-457E-8985-0FE1CD32C8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A54764A5-228F-457E-8985-0FE1CD32C8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A54764A5-228F-457E-8985-0FE1CD32C8B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E958B16E-62A5-4630-B0FA-58D9ACAB0E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E958B16E-62A5-4630-B0FA-58D9ACAB0E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E958B16E-62A5-4630-B0FA-58D9ACAB0E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E958B16E-62A5-4630-B0FA-58D9ACAB0E7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

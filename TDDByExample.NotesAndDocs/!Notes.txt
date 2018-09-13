@@ -233,7 +233,7 @@ of package "Microsoft.NET.Test.Sdk" and framework version settings are appropria
 
 34. Run it again at Azue Pipelines => SUCCESS! - the CI/CD environment is up & running. Start programming 'TTD by example...' functionality following the original book chapters....
 
-
+35. Added TDDByExample.NotesAndDocs.csproj empty project, moved !Notes.txt to it.
 
 
 
