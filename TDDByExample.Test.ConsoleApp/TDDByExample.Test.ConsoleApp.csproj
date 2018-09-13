@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <StartupObject>TDDByExample.Test.ConsoleApp.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
