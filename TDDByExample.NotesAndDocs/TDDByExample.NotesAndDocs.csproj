@@ -40,7 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="!Notes.txt" />
-    <Content Include="TODOs.txt" />
+    <Content Include="OriginalBookTOC.txt" />
+    <Content Include="TODOs and Done Chapter by Chapter.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
