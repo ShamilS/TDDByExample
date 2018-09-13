@@ -3,7 +3,7 @@ using Xunit;
 
 namespace TDDByExample.MoneyBagCalculator.XUnitTests
 {
-    public class Chapter06_UnitTests_EqualityForAll_Redux
+    public class Chapter07_UnitTests_ApplesAndOranges
     {
         /// <summary>
         /// $5 * 2 = $10
@@ -64,12 +64,26 @@ namespace TDDByExample.MoneyBagCalculator.XUnitTests
         /// Common equals
         /// </summary>
         [Fact]
-        public void TestFact06_TestEquality()
+        public void TestFact06_CommonEquals()
         {
             Assert.True(new Dollar06(5).Equals(new Dollar06(5)));
             Assert.False(new Dollar06(5).Equals(new Dollar06(6)));
             Assert.True(new Franc06(5).Equals(new Franc06(5)));
             Assert.False(new Franc06(5).Equals(new Franc06(6)));
+        }
+
+
+        /// <summary>
+        /// Francs != Dollars
+        /// </summary>
+        [Fact]
+        public void TestFact06_FrancsNotEqualDollars()
+        {
+            Assert.True(new Dollar06(5).Equals(new Dollar06(5)));
+            Assert.False(new Dollar06(5).Equals(new Dollar06(6)));
+            Assert.True(new Franc06(5).Equals(new Franc06(5)));
+            Assert.False(new Franc06(5).Equals(new Franc06(6)));
+            Assert.False(new Franc06(5).Equals(new Dollar06(5)));
         }
     }
 }

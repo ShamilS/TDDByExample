@@ -15,6 +15,6 @@ namespace TDDByExample.MoneyBagCalculator
         {
             this.Amount = amount;
         }
-        public override bool Equals(object obj) => ((Money)obj).Amount == this.Amount;
+        public override bool Equals(object obj) => ((Money)obj).Amount == this.Amount && obj.GetType().Equals(this.GetType());
     }
 }
