@@ -47,4 +47,63 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
+11. Stage new files, edited and deleted files
+>git add -A
+
+12. Check git 'initialSolution' branch status
+
+>git status
+On branch initialSolution
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   !Notes.txt
+        new file:   .gitignore
+        new file:   TDDByExample.MoneyBagCalculator.XUnitTests/TDDByExample.MoneyBagCalculator.XUnitTests.csproj
+        new file:   TDDByExample.MoneyBagCalculator.XUnitTests/UnitTest1.cs
+        new file:   TDDByExample.MoneyBagCalculator/Class1.cs
+        new file:   TDDByExample.MoneyBagCalculator/TDDByExample.MoneyBagCalculator.csproj
+        new file:   TDDByExample.Test.ConsoleApp/Program.cs
+        new file:   TDDByExample.Test.ConsoleApp/TDDByExample.Test.ConsoleApp.csproj
+        new file:   TDDByExampleSolution.sln
+
+13. Commit 'initialSolution' branch
+
+> git commit -m "Create Initial solution"
+[initialSolution 915935e] Create Initial solution
+ 9 files changed, 382 insertions(+)
+ create mode 100644 !Notes.txt
+ create mode 100644 .gitignore
+ create mode 100644 TDDByExample.MoneyBagCalculator.XUnitTests/TDDByExample.MoneyBagCalculator.XUnitTests.csproj
+ create mode 100644 TDDByExample.MoneyBagCalculator.XUnitTests/UnitTest1.cs
+ create mode 100644 TDDByExample.MoneyBagCalculator/Class1.cs
+ create mode 100644 TDDByExample.MoneyBagCalculator/TDDByExample.MoneyBagCalculator.csproj
+ create mode 100644 TDDByExample.Test.ConsoleApp/Program.cs
+ create mode 100644 TDDByExample.Test.ConsoleApp/TDDByExample.Test.ConsoleApp.csproj
+ create mode 100644 TDDByExampleSolution.sln
+
+14. Push master branch
+
+>git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+15. Push 'initialSolution' branch
+>git push -u --recurse-submodules=check --progress "origin" refs/heads/initialSolution:refs/heads/initialSolution
+Enumerating objects: 15, done.
+Delta compression using up to 8 threads
+Total 14 (delta 2), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'initialSolution' on GitHub by visiting:        
+remote:      https://github.com/ShamilS/TDDByExample/pull/new/initialSolution        
+remote: 
+To https://github.com/ShamilS/TDDByExample.git
+ * [new branch]      initialSolution -> initialSolution
+Branch 'initialSolution' set up to track remote branch 'initialSolution' from 'origin'.
+Done
+
+
+
+
+
 
