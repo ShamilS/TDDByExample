@@ -199,5 +199,26 @@ Done
 
 >git checkout -b chapter01
 
+28. make edites to Class1.cs to have it running GREEN 
 
+29. Commit and push changes to the remote repository
+
+>git. push -u --recurse-submodules=check --progress "origin" refs/heads/chapter01:refs/heads/chapter01
+Enumerating objects: 9, done.
+Delta compression using up to 8 threads
+Total 5 (delta 4), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'chapter01' on GitHub by visiting:        
+remote:      https://github.com/ShamilS/TDDByExample/pull/new/chapter01        
+remote: 
+To https://github.com/ShamilS/TDDByExample.git
+ * [new branch]      chapter01 -> chapter01
+Branch 'chapter01' set up to track remote branch 'chapter01' from 'origin'.
+Done
+
+30. Azure pipelines test failed
+
+31. add ref to 
+
+Microsoft.NET.Test.Sdk
 
