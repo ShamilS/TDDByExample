@@ -357,3 +357,38 @@ Fast-forward
  create mode 100644 TDDByExample.MoneyBagCalculator/Dollar$03.cs
 Done
 
+====
+
+Chapter04 push/merge/pull
+
+"C:\Program Files\Git\bin\git.exe" push -u --recurse-submodules=check --progress "origin" refs/heads/chapter04:refs/heads/chapter04
+Enumerating objects: 13, done.
+Delta compression using up to 8 threads
+Total 8 (delta 5), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'chapter04' on GitHub by visiting:        
+remote:      https://github.com/ShamilS/TDDByExample/pull/new/chapter04        
+remote: 
+Branch 'chapter04' set up to track remote branch 'chapter04' from 'origin'.
+To https://github.com/ShamilS/TDDByExample.git
+ * [new branch]      chapter04 -> chapter04
+Done
+
+...
+
+"C:\Program Files\Git\bin\git.exe" pull --progress "origin" 
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0        
+From https://github.com/ShamilS/TDDByExample
+   ef10a7b..c64fc73  master     -> origin/master
+Updating ef10a7b..c64fc73
+Fast-forward
+ .../Chapter04_UnitTests_Privacy.cs                 | 60 ++++++++++++++++++++++
+ TDDByExample.MoneyBagCalculator/Dollar$04.cs       | 30 +++++++++++
+ TDDByExample.NotesAndDocs/!Notes.txt               | 35 ++++++++++++-
+ 3 files changed, 124 insertions(+), 1 deletion(-)
+ create mode 100644 TDDByExample.MoneyBagCalculator.XUnitTests/Chapter04_UnitTests_Privacy.cs
+ create mode 100644 TDDByExample.MoneyBagCalculator/Dollar$04.cs
+Done
+
+====
+
