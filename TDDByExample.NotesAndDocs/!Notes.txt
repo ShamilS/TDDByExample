@@ -276,13 +276,51 @@ Fast-forward
  create mode 100644 TDDByExample.NotesAndDocs/TODOs.txt
 Done
 
+.....
 
+"C:\Program Files\Git\bin\git.exe" push -u --recurse-submodules=check --progress "origin" refs/heads/chapter02:refs/heads/chapter02
+Enumerating objects: 23, done.
+Delta compression using up to 8 threads
+Total 14 (delta 4), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'chapter02' on GitHub by visiting:        
+remote:      https://github.com/ShamilS/TDDByExample/pull/new/chapter02        
+remote: 
+To https://github.com/ShamilS/TDDByExample.git
+ * [new branch]      chapter02 -> chapter02
+Branch 'chapter02' set up to track remote branch 'chapter02' from 'origin'.
+Done
+====
+....
+====
 
-
-
-
-
-
-
-
-
+"C:\Program Files\Git\bin\git.exe" pull --progress "origin" 
+remote: Total 4 (delta 2), reused 0 (delta 0), pack-reused 0        
+From https://github.com/ShamilS/TDDByExample
+   fc1d731..1dcbd54  master     -> origin/master
+Updating fc1d731..1dcbd54
+Fast-forward
+ !Notes.txt                                         | 240 ---------------------
+ .../Chapter01_UnitTests.cs                         |  16 --
+ .../Chapter01_UnitTests_MultiCurrencyMoney.cs      |  19 ++
+ .../Chapter02_UnitTests_DegenerateObjects.cs       |  33 +++
+ TDDByExample.MoneyBagCalculator/Dollar$01.cs       |  26 +++
+ TDDByExample.MoneyBagCalculator/Dollar$02.cs       |  28 +++
+ TDDByExample.MoneyBagCalculator/Dollar.cs          |  17 --
+ TDDByExample.NotesAndDocs/!Notes.txt               |  32 +++
+ TDDByExample.NotesAndDocs/OriginalBookTOC.txt      |  44 ++++
+ .../TDDByExample.NotesAndDocs.csproj               |   3 +-
+ .../TODOs and Done Chapter by Chapter.txt          |  48 +++++
+ TDDByExample.NotesAndDocs/TODOs.txt                |  51 -----
+ 12 files changed, 232 insertions(+), 325 deletions(-)
+ delete mode 100644 !Notes.txt
+ delete mode 100644 TDDByExample.MoneyBagCalculator.XUnitTests/Chapter01_UnitTests.cs
+ create mode 100644 TDDByExample.MoneyBagCalculator.XUnitTests/Chapter01_UnitTests_MultiCurrencyMoney.cs
+ create mode 100644 TDDByExample.MoneyBagCalculator.XUnitTests/Chapter02_UnitTests_DegenerateObjects.cs
+ create mode 100644 TDDByExample.MoneyBagCalculator/Dollar$01.cs
+ create mode 100644 TDDByExample.MoneyBagCalculator/Dollar$02.cs
+ delete mode 100644 TDDByExample.MoneyBagCalculator/Dollar.cs
+ create mode 100644 TDDByExample.NotesAndDocs/OriginalBookTOC.txt
+ create mode 100644 TDDByExample.NotesAndDocs/TODOs and Done Chapter by Chapter.txt
+ delete mode 100644 TDDByExample.NotesAndDocs/TODOs.txt
+Done
