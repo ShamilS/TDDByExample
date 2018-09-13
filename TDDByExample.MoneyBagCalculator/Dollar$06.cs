@@ -2,10 +2,6 @@
 
 namespace TDDByExample.MoneyBagCalculator
 {
-    /// <summary>
-    /// Done:
-    ///    Subclassed from Money 
-    /// </summary>
     public class Dollar06 : Money
     {
         public Dollar06(int amount) : base(amount) { }

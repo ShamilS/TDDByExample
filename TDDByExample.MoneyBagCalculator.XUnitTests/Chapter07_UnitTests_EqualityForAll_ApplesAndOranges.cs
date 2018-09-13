@@ -3,7 +3,28 @@ using Xunit;
 
 namespace TDDByExample.MoneyBagCalculator.XUnitTests
 {
-    public class Chapter06_UnitTests_EqualityForAll_Redux
+    /// <summary>
+    /// Done:
+    ///  $5*2 = $10
+    ///  Make "amount" private
+    ///  Dollar side effects?
+    ///  Equals
+    ///  5 CHF* 2 = 10 CHF
+    ///  Common equals
+    ///  Francs != Dollars
+    /// 
+    /// To do:
+    ///  $5 + 10 CHF = $10 if CHF:USD is 2:1
+    ///  Make “amount” private
+    ///  Money rounding?
+    ///  HashCode()
+    ///  Equal null
+    ///  Equal object
+    ///  Dollar/Franc duplication
+    ///  Common times
+    ///  Currency?
+    /// </summary>
+    public class Chapter07_UnitTests_EqualityForAll_ApplesAndOranges
     {
         /// <summary>
         /// $5 * 2 = $10
@@ -17,8 +38,9 @@ namespace TDDByExample.MoneyBagCalculator.XUnitTests
         }
 
         /// <summary>
-        /// No side effects from previous multiplication:
-        /// $5 * 3 = 15
+        /// Dollar side effects? => 
+        ///    No side effects from previous multiplication =>
+        ///    $5 * 3 = 15
         /// </summary>
         [Fact]
         public void TestFact02_MultiplicationAndDegenerateObjects()
@@ -72,9 +94,14 @@ namespace TDDByExample.MoneyBagCalculator.XUnitTests
             Assert.False(new Franc06(5).Equals(new Franc06(6)));
         }
 
+
         /// <summary>
         /// Francs not equal Dollars
         /// </summary>
-
+        [Fact]
+        public void TestFact07_TestEquality_ApplesAndOranges()
+        {
+            Assert.False(new Franc06(5).Equals(new Dollar06(5)));
+        }
     }
 }
