@@ -174,11 +174,30 @@ Done
 
 24.
 
-"C:\Program Files\Git\bin\git.exe" reset --hard "be28858ee43f1b1399b0aa790b91198b45c9c5d8"
+>git reset --hard "be28858ee43f1b1399b0aa790b91198b45c9c5d8"
 HEAD is now at be28858 Set up CI with Azure Pipelines
 Done
 
+25.
 
+>git commit -F "S:\Projects\SMS\TDDByExampleSolution\.git\COMMITMESSAGE"
+[master b678902] !Notes.txt edited
+ 1 file changed, 76 insertions(+)
+Done
+
+26.
+
+>git push --recurse-submodules=check --progress "origin" refs/heads/master:refs/heads/master
+Enumerating objects: 5, done.
+Delta compression using up to 8 threads
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/ShamilS/TDDByExample.git
+   be28858..b678902  master -> master
+Done
+
+27.
+
+>git checkout -b chapter01
 
 
 
