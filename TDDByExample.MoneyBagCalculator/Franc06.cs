@@ -4,10 +4,6 @@ using System.Text;
 
 namespace TDDByExample.MoneyBagCalculator
 {
-    /// <summary>
-    /// Done:
-    ///    Subclassed from Money 
-    /// </summary>
     public class Franc06:Money
     {
         public Franc06(int amount) : base(amount) { }
