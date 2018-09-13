@@ -233,6 +233,22 @@ of package "Microsoft.NET.Test.Sdk" and framework version settings are appropria
 
 34. Run it again at Azue Pipelines => SUCCESS! - the CI/CD environment is up & running. Start programming 'TTD by example...' functionality following the original book chapters....
 
+35. Added TDDByExample.NotesAndDocs.csproj empty project, moved !Notes.txt to it.
+
+38. Obviously
+
+CSC(0,0): Error CS5001: Program does not contain a static 'Main' method suitable for an entry point
+Process 'msbuild.exe' exited with code '1'.
+
+39. Added program.cs to TDDByExample.NotesAndDocs.csproj, set entry point to it on project level. Commit.
+
+40. Azure Pipelines run -> Success!
+
+
+
+
+
+
 
 
 

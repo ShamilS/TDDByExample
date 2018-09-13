@@ -3,7 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <StartupObject>TDDByExample.Test.ConsoleApp.Program</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TDDByExample.MoneyBagCalculator\TDDByExample.MoneyBagCalculator.csproj" />
