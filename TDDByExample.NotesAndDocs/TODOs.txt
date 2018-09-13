@@ -1,0 +1,51 @@
+﻿1. Implement first version of DOllar class and multiplication operation
+
+TODOs:
+
+$5 + 10 CHF = $10 if CHF:USD is 2:1
+$5 * 2 = $10
+Make “amount” private
+Dollar side-effects?
+Money rounding?
+
+* No class “Dollar”
+* No constructor
+* No method “times(int)”
+* No field “amount”
+
+Code:
+  - app
+
+    public class Dollar
+    {
+        public int Amount { get; private set; }
+        public Dollar(int amount)
+        {
+            this.Amount = amount;
+        }
+        public void Times(int multiplier)
+        {
+            this.Amount *= multiplier;
+        }
+    }
+
+  - test 
+
+        [Fact]
+        public void TestMultiplication()
+        {
+            Dollar five = new Dollar(5);
+            five.Times(2);
+            Assert.Equal(10, five.Amount);
+        }
+
+DONE:
+
+DONE: * No class “Dollar”
+DONE: * No constructor
+DONE: * No method “times(int)”
+DONE: * No field “amount”
+DONE: $5 * 2 = $10
+
+---------------------
+

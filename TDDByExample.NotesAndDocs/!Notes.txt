@@ -240,7 +240,12 @@ of package "Microsoft.NET.Test.Sdk" and framework version settings are appropria
 CSC(0,0): Error CS5001: Program does not contain a static 'Main' method suitable for an entry point
 Process 'msbuild.exe' exited with code '1'.
 
-39. Added program.cs to TDDByExample.NotesAndDocs.csproj, set entry point to it on project level. Commit
+39. Added program.cs to TDDByExample.NotesAndDocs.csproj, set entry point to it on project level. Commit.
+
+40. Azure Pipelines run -> Success!
+
+
+
 
 
 
