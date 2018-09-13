@@ -104,5 +104,81 @@ Done
 
 
 
+16.
+> git commit -m "Ready for the first merge with master'
+[initialSolution 201a67a] Ready for the first merge with master'
+ 1 file changed, 59 insertions(+)
+
+17.
+> git add !Notes.txt
+
+18.
+> git commit -m "Ready for the first merge with master'
+[initialSolution 2a4952b] Ready for the first merge with master'
+ 1 file changed, 1 deletion(-)
+
+19.
+>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+20. Merge with 'master' branch
+>git merge initialSolution
+Updating 42d892b..2a4952b
+Fast-forward
+ !Notes.txt                                         | 108 ++++++++++
+ .gitignore                                         | 218 +++++++++++++++++++++
+ ...DByExample.MoneyBagCalculator.XUnitTests.csproj |  19 ++
+ .../UnitTest1.cs                                   |  14 ++
+ TDDByExample.MoneyBagCalculator/Class1.cs          |   8 +
+ .../TDDByExample.MoneyBagCalculator.csproj         |   7 +
+ TDDByExample.Test.ConsoleApp/Program.cs            |  12 ++
+ .../TDDByExample.Test.ConsoleApp.csproj            |  12 ++
+ TDDByExampleSolution.sln                           |  42 ++++
+ 9 files changed, 440 insertions(+)
+ create mode 100644 !Notes.txt
+ create mode 100644 .gitignore
+ create mode 100644 TDDByExample.MoneyBagCalculator.XUnitTests/TDDByExample.MoneyBagCalculator.XUnitTests.csproj
+ create mode 100644 TDDByExample.MoneyBagCalculator.XUnitTests/UnitTest1.cs
+ create mode 100644 TDDByExample.MoneyBagCalculator/Class1.cs
+ create mode 100644 TDDByExample.MoneyBagCalculator/TDDByExample.MoneyBagCalculator.csproj
+ create mode 100644 TDDByExample.Test.ConsoleApp/Program.cs
+ create mode 100644 TDDByExample.Test.ConsoleApp/TDDByExample.Test.ConsoleApp.csproj
+ create mode 100644 TDDByExampleSolution.sln
+
+21. Push to the remote repository
+>git  push --recurse-submodules=check --progress "origin" refs/heads/master:refs/heads/master
+Enumerating objects: 8, done.
+Delta compression using up to 8 threads
+Total 6 (delta 3), reused 0 (delta 0)
+To https://github.com/ShamilS/TDDByExample.git
+   42d892b..2a4952b  master -> master
+Done
+
+22.
+
+Connected to Azure Pipelines on github. Created azure-pipelines.yml
+
+23. Pull changes to the local copy
+
+git pull --progress "origin" 
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0        
+From https://github.com/ShamilS/TDDByExample
+   2a4952b..be28858  master     -> origin/master
+Updating 2a4952b..be28858
+Fast-forward
+ azure-pipelines.yml | 30 ++++++++++++++++++++++++++++++
+ 1 file changed, 30 insertions(+)
+ create mode 100644 azure-pipelines.yml
+Done
+
+24.
+
+"C:\Program Files\Git\bin\git.exe" reset --hard "be28858ee43f1b1399b0aa790b91198b45c9c5d8"
+HEAD is now at be28858 Set up CI with Azure Pipelines
+Done
+
+
+
 
 
