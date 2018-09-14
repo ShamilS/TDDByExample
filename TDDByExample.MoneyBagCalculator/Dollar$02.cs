@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TDDByExample.MoneyBagCalculator
+namespace TDDByExample.MoneyBagCalculator.Chapter02
 {
     ///<summary>
     /// Done: 
@@ -10,19 +10,19 @@ namespace TDDByExample.MoneyBagCalculator
     ///     * No method “times(int)”
     ///     * No field “amount”
     ///     $5 * 2 = $10
-    ///   +02. Degenerate Objects
+    ///   +. Degenerate Objects
     ///     Dollar side-effects?
     ///</summary>
-    public class Dollar02
+    public class Dollar
     {
         public int Amount { get; private set; }
-        public Dollar02(int amount)
+        public Dollar(int amount)
         {
             this.Amount = amount;
         }
-        public Dollar02 Times(int multiplier)
+        public Dollar Times(int multiplier)
         {
-            return new Dollar02(this.Amount * multiplier);
+            return new Dollar(this.Amount * multiplier);
         }
     }
 }

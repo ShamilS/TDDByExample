@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TDDByExample.MoneyBagCalculator
+namespace TDDByExample.MoneyBagCalculator.Chapter06
 {
     public class Money
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TDDByExample.MoneyBagCalculator
+namespace TDDByExample.MoneyBagCalculator.Chapter04
 {
     ///<summary>
     /// Done: 
@@ -14,17 +14,17 @@ namespace TDDByExample.MoneyBagCalculator
     ///     Dollar side-effects?
     ///   +03.
     ///     Equals()
-    ///   +04.
+    ///   +.
     ///     Make “amount” private
     ///</summary>
-    public class Dollar04
+    public class Dollar
     {
         private int Amount { get; set; }
-        public Dollar04(int amount)
+        public Dollar(int amount)
         {
             this.Amount = amount;
         }
-        public Dollar04 Times(int multiplier) => new Dollar04(this.Amount * multiplier);
-        public override bool Equals(object obj) => ((Dollar04)obj).Amount == this.Amount;
+        public Dollar Times(int multiplier) => new Dollar(this.Amount * multiplier);
+        public override bool Equals(object obj) => ((Dollar)obj).Amount == this.Amount;
     }
 }

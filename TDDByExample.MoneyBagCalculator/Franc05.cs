@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TDDByExample.MoneyBagCalculator
+namespace TDDByExample.MoneyBagCalculator.Chapter05
 {
     /// <summary>
     /// Done: 
-    ///   +05.
+    ///   +.
     ///     5 CHF * 2 = 10 CHF 
     /// </summary>
     public class Franc
