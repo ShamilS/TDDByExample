@@ -4,9 +4,9 @@ using System.Text;
 
 namespace TDDByExample.MoneyBagCalculator.Chapter10
 {
-    public class Money
+    public abstract class Money
     {
-        public Money Times(int multiplier) => new Money(this.Amount * multiplier, this.Currency);
+        public abstract Money Times(int multiplier);
         public string Currency { get; private set; }
 
         protected int Amount { get; set; }

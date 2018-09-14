@@ -11,20 +11,19 @@ namespace TDDByExample.MoneyBagCalculator.XUnitTests
     ///  Dollar side effects?
     ///  Equals
     ///  5 CHF* 2 = 10 CHF
-    ///  Dollar/Franc duplication
     ///  Common equals
-    ///  Common times
     ///  Francs != Dollars
     ///  Currency?
-    ///  Delete testFrancMultiplication?
     /// 
     /// To do:
     ///  $5 + 10 CHF = $10 if CHF:USD is 2:1
-    ///  Make “amount” private
     ///  Money rounding?
     ///  HashCode()
     ///  Equal null
     ///  Equal object
+    ///  Dollar/Franc duplication
+    ///  Common times
+    ///  Delete testFrancMultiplication?
     /// </summary>
     public class Chapter10_UnitTests_InterestingTimes
     {
