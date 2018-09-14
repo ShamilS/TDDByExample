@@ -5,7 +5,9 @@ using TDDByExample.MoneyBagCalculator.Chapter13;
 namespace TDDByExample.MoneyBagCalculator.XUnitTests
 {
     /// <summary>
+    /// 
     /// Done:
+    /// 
     ///  $5*2 = $10
     ///  Make "amount" private
     ///  Dollar side effects?
@@ -21,6 +23,7 @@ namespace TDDByExample.MoneyBagCalculator.XUnitTests
     ///  Bank.Reduce(Money)
     /// 
     /// To do:
+    /// 
     ///  $5 + 10 CHF = $10 if CHF:USD is 2:1
     ///  Money rounding?
     ///  HashCode()
