@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TDDByExample.MoneyBagCalculator
+namespace TDDByExample.MoneyBagCalculator.Chapter03
 {
     ///<summary>
     /// Done: 
@@ -12,17 +12,17 @@ namespace TDDByExample.MoneyBagCalculator
     ///     $5 * 2 = $10
     ///   +02. Degenerate Objects
     ///     Dollar side-effects?
-    ///   +03.
+    ///   +.
     ///     Equals()
     ///</summary>
-    public class Dollar03
+    public class Dollar
     {
         public int Amount { get; private set; }
-        public Dollar03(int amount)
+        public Dollar(int amount)
         {
             this.Amount = amount;
         }
-        public Dollar03 Times(int multiplier) => new Dollar03(this.Amount * multiplier);
-        public override bool Equals(object obj) => ((Dollar03)obj).Amount == this.Amount;
+        public Dollar Times(int multiplier) => new Dollar(this.Amount * multiplier);
+        public override bool Equals(object obj) => ((Dollar)obj).Amount == this.Amount;
     }
 }

@@ -1,11 +1,32 @@
 using System;
 using Xunit;
-
-using TDDByExample.MoneyBagCalculator.Chapter06;
+using TDDByExample.MoneyBagCalculator.Chapter08;
 
 namespace TDDByExample.MoneyBagCalculator.XUnitTests
 {
-    public class Chapter06_UnitTests_EqualityForAll_Redux
+    /// <summary>
+    /// Done:
+    ///  $5*2 = $10
+    ///  Make "amount" private
+    ///  Dollar side effects?
+    ///  Equals
+    ///  5 CHF* 2 = 10 CHF
+    ///  Common equals
+    ///  Francs != Dollars
+    /// 
+    /// To do:
+    ///  $5 + 10 CHF = $10 if CHF:USD is 2:1
+    ///  Make “amount” private
+    ///  Money rounding?
+    ///  HashCode()
+    ///  Equal null
+    ///  Equal object
+    ///  Dollar/Franc duplication
+    ///  Common times
+    ///  Currency?
+    ///  Delete testFrancMultiplication?
+    /// </summary>
+    public class Chapter08_UnitTests_MakingObjects
     {
         /// <summary>
         /// $5 * 2 = $10
@@ -13,23 +34,27 @@ namespace TDDByExample.MoneyBagCalculator.XUnitTests
         [Fact]
         public void TestFact01_Multiplication()
         {
-            Dollar five = new Dollar(5);
-            Dollar product = five.Times(2);
+            Money five = new Dollar(5);
+            Money product = five.Times(2);
             Assert.Equal(new Dollar(10), product);
         }
 
         /// <summary>
-        /// No side effects from previous multiplication:
-        /// $5 * 3 = 15
+        /// Dollar side effects? => 
+        ///    No side effects from previous multiplication =>
+        ///    $5 * 3 = 15
         /// </summary>
         [Fact]
         public void TestFact02_MultiplicationAndDegenerateObjects()
         {
-            Dollar five = new Dollar(5);
-            Dollar product = five.Times(2);
+            Money five = Money.Dollar(5);
+            Money product = five.Times(2);
             Assert.Equal(new Dollar(10), product);
             product = five.Times(3);
             Assert.Equal(new Dollar(15), product);
+            // chapter08
+            Assert.Equal(Money.Dollar(10), five.Times(2));
+            Assert.Equal(Money.Dollar(15), five.Times(3));
         }
 
         /// <summary>
@@ -66,7 +91,7 @@ namespace TDDByExample.MoneyBagCalculator.XUnitTests
         /// Common equals
         /// </summary>
         [Fact]
-        public void TestFact_TestEquality()
+        public void TestFact06_TestEquality()
         {
             Assert.True(new Dollar(5).Equals(new Dollar(5)));
             Assert.False(new Dollar(5).Equals(new Dollar(6)));
@@ -74,9 +99,17 @@ namespace TDDByExample.MoneyBagCalculator.XUnitTests
             Assert.False(new Franc(5).Equals(new Franc(6)));
         }
 
+
         /// <summary>
         /// Francs not equal Dollars
         /// </summary>
-
+        [Fact]
+        public void TestFact07_TestEquality_ApplesAndOranges()
+        {
+            Assert.False(new Franc(5).Equals(new Dollar(5)));
+            // chapter08
+            Assert.True(Money.Dollar(5).Equals(Money.Dollar(5)));
+            Assert.False(Money.Dollar(5).Equals(Money.Dollar(6)));
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TDDByExample.MoneyBagCalculator
+namespace TDDByExample.MoneyBagCalculator.Chapter01
 {
     ///<summary>
     /// Done: 
@@ -11,10 +11,10 @@ namespace TDDByExample.MoneyBagCalculator
     ///     * No field “amount”
     ///     $5 * 2 = $10
     /// </summary>
-    public class Dollar01
+    public class Dollar
     {
         public int Amount { get; private set; }
-        public Dollar01(int amount)
+        public Dollar(int amount)
         {
             this.Amount = amount;
         }

@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace TDDByExample.MoneyBagCalculator
+namespace TDDByExample.MoneyBagCalculator.Chapter06
 {
-    public class Dollar06 : Money
+    public class Dollar : Money
     {
-        public Dollar06(int amount) : base(amount) { }
-        public Dollar06 Times(int multiplier) => new Dollar06(this.Amount * multiplier);
+        public Dollar(int amount) : base(amount) { }
+        public Dollar Times(int multiplier) => new Dollar(this.Amount * multiplier);
     }
 }

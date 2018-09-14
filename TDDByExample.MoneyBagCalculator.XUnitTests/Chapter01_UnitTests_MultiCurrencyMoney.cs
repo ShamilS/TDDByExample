@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using TDDByExample.MoneyBagCalculator.Chapter01;
 
 namespace TDDByExample.MoneyBagCalculator.XUnitTests
 {
@@ -11,7 +12,7 @@ namespace TDDByExample.MoneyBagCalculator.XUnitTests
         [Fact]
         public void TestMultiplication_Fact01()
         {
-            Dollar01 five = new Dollar01(5);
+            Dollar five = new Dollar(5);
             five.Times(2);
             Assert.Equal(10, five.Amount);
         }

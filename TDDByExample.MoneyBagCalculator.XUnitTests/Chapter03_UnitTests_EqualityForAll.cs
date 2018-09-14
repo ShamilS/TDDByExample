@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using TDDByExample.MoneyBagCalculator.Chapter03;
 
 namespace TDDByExample.MoneyBagCalculator.XUnitTests
 {
@@ -11,8 +12,8 @@ namespace TDDByExample.MoneyBagCalculator.XUnitTests
         [Fact]
         public void TestFact01_Multiplication()
         {
-            Dollar03 five = new Dollar03(5);
-            Dollar03 product = five.Times(2);
+            Dollar five = new Dollar(5);
+            Dollar product = five.Times(2);
             Assert.Equal(10, product.Amount);
         }
 
@@ -23,8 +24,8 @@ namespace TDDByExample.MoneyBagCalculator.XUnitTests
         [Fact]
         public void TestFact02_MultiplicationAndDegenerateObjects()
         {
-            Dollar03 five = new Dollar03(5);
-            Dollar03 product = five.Times(2);
+            Dollar five = new Dollar(5);
+            Dollar product = five.Times(2);
             Assert.Equal(10, product.Amount);
             product = five.Times(3);
             Assert.Equal(15, product.Amount);
@@ -34,10 +35,10 @@ namespace TDDByExample.MoneyBagCalculator.XUnitTests
         /// Equals()
         /// </summary>
         [Fact]
-        public void TestFact03_Equals()
+        public void TestFact_Equals()
         {
-            Assert.True(new Dollar03(5).Equals(new Dollar03(5)));
-            Assert.False(new Dollar03(5).Equals(new Dollar03(6)));
+            Assert.True(new Dollar(5).Equals(new Dollar(5)));
+            Assert.False(new Dollar(5).Equals(new Dollar(6)));
         }
     }
 }
