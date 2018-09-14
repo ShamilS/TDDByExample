@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TDDByExample.MoneyBagCalculator.Chapter12
+namespace TDDByExample.MoneyBagCalculator.Chapter13
 {
+    // it's the same as in Chapter11 and Chapter12
     public class Money:Expression
     {
-        internal int Amount { get; private set; }
+        public int Amount { get; private set; }
         public string Currency { get; private set; }
         public Money(int amount, string currency)
         {
@@ -16,6 +17,11 @@ namespace TDDByExample.MoneyBagCalculator.Chapter12
         public Money Times(int multiplier) => new Money(this.Amount * multiplier, this.Currency);
         public Money Plus(Money addend) => new Money(this.Amount + addend.Amount, this.Currency);
         public override bool Equals(object obj) => ((Money)obj).Amount == this.Amount && this.Currency.Equals(((Money)obj).Currency);
+
+        public Money Reduce(String to)
+        {
+            return this;
+        }
 
         public static Money Dollar(int amount) => new Dollar(amount, "USD");
         public static Money Franc(int amount) => new Franc(amount, "CHF");
